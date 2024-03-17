@@ -10,42 +10,26 @@
     <header class="header header--bordered-padding">
         <div class="header__left">
             <div class="header__burger">
-                <img src="./assets/img/header/burger.svg" alt="Menu">
+                <a href="#"><img src="./assets/img/header/burger.svg" alt="Menu"></a>
             </div>
             <div class="header__logo">
-                <div class="header__border-line--left"></div>
-                <img src="./assets/img/header/logo.svg" alt="Logotype">
+                <div class="header__border-line header__border-line--left"></div>
+                <a href="#"><img src="./assets/img/header/logo.svg" alt="Logotype"></a>
                 <div class="header__border-line"></div>
             </div>
         </div>
-        <div class="header__check">
-            <div class="header__call hidden">
-                <a href="#">
-                    <img src="./assets/img/header/call.svg" alt="Call">
-                </a>
-            </div>
-            <div class="header__chat hidden">
-                <a href="#">
-                    <img src="./assets/img/header/chat.svg" alt="Chat">
-                </a>
-            </div>
-            <div class="header__profile hidden">
-                <a href="#">
-                    <img src="./assets/img/header/profile.svg" alt="Profile">
-                </a>
+        <nav class="header__right-menu">
+            <div class="header__menu--laptop hidden">
+                <a href="#"><img src="./assets/img/header/call.svg" alt="Call"></a>
+                <a href="#"><img src="./assets/img/header/chat.svg" alt="Chat"></a>
+                <a href="#"><img src="./assets/img/header/profile.svg" alt="Profile"></a>
             </div>
             <div class="header__border-line--left"></div>
-            <div class="header__repair">
-                <a href="#">
-                    <img src="./assets/img/header/repair.svg" alt="Repair">
-                </a>
+            <div class="header__menu--mobile-laptop">
+                <a href="#"><img src="./assets/img/header/repair.svg" alt="Repair"></a>
+                <a href="#"><img src="./assets/img/header/checkstatus.svg" alt="Check status"></a>
             </div>
-            <div class="header__check-status">
-                <a href="#">
-                    <img src="./assets/img/header/checkstatus.svg" alt="Check status">
-                </a>
-            </div>
-        </div>
+        </nav>
     </header>
     <div class="main">
         <div class="about">
@@ -58,42 +42,44 @@
                 </div>
                 <div class="about__title-right hidden-1200">
                     <div class="header__repair">
-                        Оставить заявку
-                        <a href="#">
-                            <img src="./assets/img/header/repair.svg" alt="Repair">
-                        </a>
+                        <button type="button" class="header__button--desktop">Оставить заявку <img src="/assets/img/header/repair.svg" alt="Check status"></button>
                     </div>
                     <div class="header__check-status">
-                        Статус ремонта
-                        <a href="#">
-                            <img src="./assets/img/header/checkstatus.svg" alt="Check status">
-                        </a>
+                        <button type="button" class="header__button--desktop">Статус ремонта <img src="./assets/img/header/checkstatus.svg" alt="Check status"></button>
                     </div>
                 </div>
             </div>
             <ul class="about__slide-menu">
-                <li class="about__slide-item about__slide-item--active"><a class="about__link--color" href="#">Ремонтируемые бренды</a></li>
-                <li class="about__slide-item"><a class="about__link--color" href="#">Дополнительные услуги</a></li>
-                <li class="about__slide-item"><a class="about__link--color" href="#">Цены на услуги</a></li>
-                <li class="about__slide-item"><a class="about__link--color" href="#">Адреса сервисных центров</a></li>
-                <li class="about__slide-item"><a class="about__link--color" href="#">Специальные цены</a></li>
+                <li class="about__slide-item"><a href="#">Ремонтируемые бренды</a></li>
+                <li class="about__slide-item"><a href="#">Дополнительные услуги</a></li>
+                <li class="about__slide-item"><a href="#">Цены на услуги</a></li>
+                <li class="about__slide-item"><a href="#">Адреса сервисных центров</a></li>
+                <li class="about__slide-item"><a href="#">Специальные цены</a></li>
+                <li class="about__slide-item"><a href="#">Отзывы</a></li>
             </ul>
-            <div class="about__info container">
-                <div class="about__text">
-                    Мы являемся авторизованным
-                    сервисным центром по ремонту техники
-                    Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с
-                    официальной гарантией производителя.
-                    <p class="about__link">
-                        <img src="./assets/img/about/arrow-link.svg" alt="">
-                        <a class="about__more-link--bg-image" href="#">Читать далее</a>
+            <section class="about__info container">
+                <article class="about__col">
+                    <p class="about__text">
+                        Мы являемся авторизованным
+                        сервисным центром по ремонту техники
+                        Dell. Только у нас вы можете
+                        отремонтировать свой ноутбук Dell с
+                        официальной гарантией производителя.
                     </p>
-                </div>
-                <div class="about__img">
+                    <p class="about__text hidden">
+                        Мы успешно работаем с 1992 года и
+                        заслужили репутацию надежного партнера<span class="hidden-768">, что подтверждает большое количество
+                        постоянных клиентов. Мы гордимся тем,
+                        что к нам обращаются по рекомендациям
+                        и, в свою очередь, советуют нас родным
+                        и близким.</span>
+                    </p>
+                    <button class="about__button" type="button">Читать далее</button>
+                </article>
+                <figure class="about__img">
                     <img class="about__img--width" src="assets/img/about/Picture_Copy.png" alt="About company">
-                </div>
-            </div>
+                </figure>
+            </section>
         </div>
     </div>
 
