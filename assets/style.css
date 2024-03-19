@@ -52,6 +52,36 @@ a{
     align-items: center;
     gap: 25px;
 }
+.header__img--ico-mod{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header__logo-img{
+    background-image: url(img/header/logo.svg);
+    width: 98px;
+    height: 52px;
+}
+.header__button{
+    background-image: url(img/header/burger.svg);
+}
+.header__call-img{
+    background-image: url(img/header/call.svg);
+}
+.header__chat-img{
+    background-image: url(img/header/chat.svg);
+}
+.header__profile-img{
+    background-image: url(img/header/profile.svg);
+}
+.header__repair-img{
+    background-image: url(img/header/repair.svg);
+}
+.header__check-img{
+    background-image: url(img/header/checkstatus.svg);
+}
 .header__right-menu{
     display: flex;
     align-items: center;
@@ -74,6 +104,7 @@ a{
     width: 2px;
     background: rgba(234, 234, 234, 1);
 }
+
 .about{
     display: flex;
     flex-direction: column;
@@ -112,11 +143,14 @@ a{
 }
 .about__slide-item{
     white-space: nowrap;
-    padding: 5px 12px;
+    padding: 8px 12px;
+}
+.about__slide-item a{
+    padding: 6px 12px;
     border: 2px solid transparent;
 }
-.about__slide-item:hover{
-    box-sizing: border-box;
+
+.about__slide-item a:hover{
     border: 2px solid rgb(184, 255, 236);
     border-radius: 6px;
     background: rgb(255, 255, 255);
@@ -126,9 +160,16 @@ a{
     flex-direction: column;
     color: #1B1C21;
 }
+.about__col{
+    display: flex;
+    flex-direction: column;
+}
 .about__text{
     padding: 0 16px;
     font-size: 14px;
+    overflow: hidden;
+    max-height: 110px;
+
 }
 .about__button::before{
     content: url("img/about/arrow-link.svg");
@@ -181,6 +222,8 @@ a{
     }
     .about__text{
         padding: 0;
+        height: 50%;
+        max-height: fit-content;
     }
     .about__slide-menu{
         margin-top: 32px;
@@ -199,6 +242,10 @@ a{
     }
     .header__border-line--left{
         display: block;
+    }
+    .about__text-mobile{
+        height: 90px;
+        width: auto;
     }
     .about__button{
         margin-left: 0;
@@ -228,6 +275,8 @@ a{
         font-weight: 400;
     }
     .header__button--desktop{
+        width: 182px;
+        height: 42px;
         border: none;
         background-color: transparent;
         font-size: inherit;
@@ -236,6 +285,15 @@ a{
         align-items: center;
         gap: 10px;
         cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding: 0;
+    }
+    .header__button--desktop--bg-repair{
+        background-image: url("img/header/repair.svg");
+    }
+    .header__button--desktop--bg-check{
+        background-image: url("img/header/checkstatus.svg");
     }
     .about__img--width {
         width: 531px;
@@ -244,6 +302,10 @@ a{
     }
     .about__button{
         margin-left: 0;
+    }
+    .about__text{
+        max-height: max-content;
+        height:auto;
     }
 
 }
